@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct TodolistData{
-    static var todolist: [String] = []
+enum Priority: String, CaseIterable{
+    case major = "MAJOR"
+    case minor = "MINOR"
 }
 
-
+struct ItemData {
+    var task: String
+    var priority: String
+}
